@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recyclinator</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="topbar">
+      <img
+        src="https://cdn.glitch.global/58270d0e-6710-44f5-b7a6-050f7349ba5f/logo.png?v=1660593090990"
+      />
+      <h3 class="navBtn"><a href="#buffer">About</a></h3>
+      <h3 class="navBtn"><a href="#interactiveMap">Interactive Map</a></h3>
+    </div>
+    <div id="buffer"></div>
+
+    <div id="content">
+      <div id="innerContent">
+        <div class="infographic" id="EWaste">
+          <h1>Wasted Electronics</h1>
+          <p>
+            Every year, 6.92 million pounds of e-waste is created. Now imagine how
+            much we can cut down on pollution if people got together and started
+            properly disposing of their electronics. This would drastically reduce
+            the amount of e-waste that enters the environment.
+          </p>
+          <img src="https://cdn.glitch.global/58270d0e-6710-44f5-b7a6-050f7349ba5f/ewaste.jpeg?v=1660679304760">
+        </div>
+
+        <div class="infographic" id="appExplain">
+          <h1>Why Should You Care?</h1>
+          <ul>
+            <li>Electronics contain toxic substances such as lead and mercury</li>
+            <li>They contain valuable raw materials such as gold and copper</li>
+            <li>Recycling helps save energy and raw materials for the future</li>
+          </ul>
+          <img src="https://cdn.glitch.global/58270d0e-6710-44f5-b7a6-050f7349ba5f/recycle.jpg?v=1660693087216">
+        </div>
+      </div>
+      <div id="tableOfLocations">
+        <h1>
+          List of Locations Near You
+        </h1>
+        <div id="searchInput">
+          <h3 class="instruction" style="padding-top:1rem">How does it work?</h3>
+          <h4 class="instruction">Just enter a general location with or without a zipcode.</h4>
+          <h4 class="instruction">A recycling center near to the input location will be displayed.</h4>
+          <label>Search Locations:</label>
+          <input id="lookup" placeholder="(i.e. Brooklyn)"/>
+          <button id="submit">Submit</button><br>
+          <p class="instruction" style="padding-top:1rem">
+            Or
+          </p>
+          <button id="location_access_request">
+              Click here to give us access to your location
+          </button>
+          <table class="center" id="table">
+            <tr>
+              <th>Business Name</th>
+              <th>Business Location</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="interactiveMap">
+        <h1>Interactive Map</h1>
+       <iframe
+          id="map"
+          width="80%"
+          height="725"
+          style="border: 0; display: block"
+          allowfullscreen
+          erpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/search?key=AIzaSyA08wrX3yT82GkulKn3tzGy_nQzFOWUR_4
+          &q=electronic+recycling+center"
+        >
+        </iframe>
+      </div>
+    </div>
+    
+    <a class="fixedButton" href="#">
+      <div class="roundedFixedBtn">
+        <img src="https://cdn.glitch.global/58270d0e-6710-44f5-b7a6-050f7349ba5f/upArrow.png?v=1660706881808">
+      </div>
+    </a>
+    
+  </body>
+</html>

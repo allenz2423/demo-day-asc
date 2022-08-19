@@ -1,0 +1,192 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color:lightgrey;
+  }
+  
+  #topbar {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0px 30px;
+    border-bottom: 2px black solid;
+  }
+  
+  #topbar img {
+    height: 60px;
+  }
+  
+  #buffer {
+    margin: 105px;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  #innerContent{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .infographic {
+    background-color: white;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 25px;
+    text-align: center;
+    width: 500px;
+  }
+  #tableOfLocations {
+    background-color: white;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 25px;
+    text-align: center;
+    width: 1054px;
+  }
+  
+  .infographic img {
+    width: 500px;
+  }
+  
+  #searchInput {
+    margin-bottom: 20px;
+  }
+  
+  .instruction {
+    margin-top: -10px;
+    font-weight: lighter;
+    color: grey;
+  }
+  
+  #interactiveMap {
+    background-color: white;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1054px;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  
+  ul li {
+    font-size: 25px;
+    text-align: left;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3d550c;
+  }
+  
+  .fixedButton{
+      position: fixed;
+      bottom: 0px;
+      right: 0px; 
+      margin: 20px;
+  }
+  
+  .roundedFixedBtn{
+      background-color: lightcoral;
+      padding-left: 3px;
+      border-radius: 35%;
+      border: black solid;
+  }
+  
+  .roundedFixedBtn img{
+      width: 50px;
+  }
+  
+  .navBtn{
+    padding: 10px;
+  }
+  
+  .navBtn:hover{
+    background-color: lightgrey;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media(max-width: 1100px){
+    #innerContent{
+      flex-direction: column;
+    }
+    
+    #interactiveMap {
+      width: 650px;
+    }
+    #tableOfLocations {
+      width: 650px;
+    }
+  
+    iframe{
+      width: 600px;
+      height: 475px;
+    }
+  }
+  
+  @media(max-width: 700px){
+    #interactiveMap {
+      width: 500px;
+    }
+    #tableOfLocations {
+      width: 500px;
+    }
+  
+    iframe{
+      width: 500px;
+      height: 400px;
+    }
+  }
+  
+  @media(max-width: 550px){
+    .infographic {
+      width: 325px;
+    }
+  
+    .infographic img {
+      width: 300px;
+    }
+  
+    #searchInput {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .instruction {
+      font-size: 12px
+    }
+  
+    #interactiveMap {
+      width: 325px;
+    }
+    #tableOfLocations {
+      width: 325px;
+    }
+    iframe{
+      width: 300px;
+      height: 250px;
+    }
+  }
+  
